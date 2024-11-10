@@ -1,1 +1,1 @@
-Write in dev and pull in gh-pages.
+Write in dev and merge it in deploy-dev, and .github/worlflows/deploy.yml will automatically build and push the built code on gh-branch.
