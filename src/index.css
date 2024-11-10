@@ -1,0 +1,30 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add dark mode styles */
+html {
+  background-color: #121212;
+  /* Default dark mode background */
+  color: #E0E0E0;
+  /* Default light text color */
+}
+
+/* Dark mode custom styles */
+body.dark {
+  background-color: #121212;
+  /* Dark background */
+  color: #E0E0E0;
+  /* Light text color */
+}
+
+body.dark .bg-teal-500 {
+  background-color: #00c561;
+  /* Teal background */
+}
+
+body.dark .text-teal-500 {
+  color: #00c561;
+  /* Teal text */
+}
