@@ -1,1 +1,1 @@
-Write in dev and pull in gh-pages
+Write in dev and pull in gh-pages.
