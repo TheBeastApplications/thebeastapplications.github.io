@@ -15,7 +15,7 @@ jobs:
           fetch-depth: 0 # Ensure full history is fetched for correct branch switching
 
       - name: Checkout the correct branch
-        run: git checkout main # Replace 'main' with your desired branch
+        run: git checkout redeploy # Replace 'main' with your desired branch
 
       - name: Install dependencies
         run: npm install
