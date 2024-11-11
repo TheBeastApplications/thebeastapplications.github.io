@@ -1,11 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiArrowRight, FiUsers, FiShoppingCart, FiCreditCard, FiDownload } from 'react-icons/fi';
+import { FiArrowRight, FiUsers,FiBook,FiDollarSign,FiList,FiClipboard,FiUserPlus ,FiDownload,FiMonitor, FiCamera } from 'react-icons/fi';
 import BalanceBookRebornIcon from './public/icon.png';
-import screenshot1 from './public/mobile1.jpg';
-import screenshot2 from './public/mobile2.jpg';
-import screenshot3 from './public/mobile3.jpg';
-import screenshot4 from './public/mobile4.jpg';
+import screenshot1 from './public/01.png';
+import screenshot2 from './public/02.png';
+import screenshot3 from './public/03.png';
+import screenshot4 from './public/04.png';
+import screenshot5 from './public/05.png';
+import screenshot6 from './public/06.png';
+import screenshot7 from './public/07.png';
+import screenshot8 from './public/08.png';
 import { Link } from 'react-router-dom';
 
 const colors = {
@@ -30,28 +34,62 @@ const appDetails = {
   icon: BalanceBookRebornIcon,
   playStoreLink: 'https://play.google.com/store/apps/details?id=com.thebeastapplications.balancebook',
 };
-
 const features = [
   {
     icon: <FiUsers className="text-3xl mr-4" style={{ color: colors.teal }} />,
-    title: 'Manage Suppliers and Customers',
-    description: 'Add and manage your business\'s suppliers and customers, all from the convenience of your mobile device.',
-    imageAlt: 'Suppliers and Customers Screenshot',
-    imageSrc: screenshot1,
+    title: 'Transform Your Business Management',
+    description: 'Take control of multiple businesses from a single dashboard. Add, manage, and track everything with our intuitive interface designed for busy entrepreneurs.',
+    imageAlt: 'Multiple Business Management Screenshot',
+    imageSrc: screenshot1
   },
   {
-    icon: <FiShoppingCart className="text-3xl mr-4" style={{ color: colors.teal }} />,
-    title: 'Track Transactions',
-    description: 'Easily keep track of all your business transactions, including sales, purchases, and payments.',
-    imageAlt: 'Transactions Screenshot',
-    imageSrc: screenshot2,
+    icon: <FiBook className="text-3xl mr-4" style={{ color: colors.teal }} />,
+    title: 'Your Business Network, Organized',
+    description: 'Keep your entire business network - customers and suppliers - organized and accessible. Build stronger relationships with efficient contact management.',
+    imageAlt: 'Streamlined Contact Management Screenshot',
+    imageSrc: screenshot2
   },
   {
-    icon: <FiCreditCard className="text-3xl mr-4" style={{ color: colors.teal }} />,
-    title: 'Manage Staff',
-    description: 'Add and manage your business\'s staff, granting them access to specific features and data.',
-    imageAlt: 'Staff Management Screenshot',
-    imageSrc: screenshot3,
+    icon: <FiDollarSign className="text-3xl mr-4" style={{ color: colors.teal }} />,
+    title: 'Effortless Financial Tracking',
+    description: 'Say goodbye to manual calculations. Our smart system automatically updates balances with every transaction, saving you hours of bookkeeping time.',
+    imageAlt: 'Smart Transaction Tracking Screenshot',
+    imageSrc: screenshot3
+  },
+  {
+    icon: <FiList className="text-3xl mr-4" style={{ color: colors.teal }} />,
+    title: 'Your Business at Your Fingertips',
+    description: 'Access your complete transaction history instantly. Get a clear picture of your business performance with our comprehensive transaction dashboard.',
+    imageAlt: 'Complete Business Overview Screenshot',
+    imageSrc: screenshot4
+  },
+  {
+    icon: <FiClipboard className="text-3xl mr-4" style={{ color: colors.teal }} />,
+    title: 'Full Transaction Transparency',
+    description: 'Track every transaction with complete staff accountability. Know exactly who handled each transaction for better business control.',
+    imageAlt: 'Detailed Transaction Records Screenshot',
+    imageSrc: screenshot5
+  },
+  {
+    icon: <FiUserPlus className="text-3xl mr-4" style={{ color: colors.teal }} />,
+    title: 'Seamless Team Expansion',
+    description: 'Add staff members securely and instantly with our innovative QR system. Manage permissions and track activities all in one place.',
+    imageAlt: 'Easy Team Management Screenshot',
+    imageSrc: screenshot6
+  },
+  {
+    icon: <FiCamera className="text-3xl mr-4" style={{ color: colors.teal }} />,
+    title: 'Connect With Businesses Instantly',
+    description: 'Join your favorite businesses with a simple QR scan. No paperwork, no delays - just instant connection and real-time updates.',
+    imageAlt: 'Customer Connection Screenshot',
+    imageSrc: screenshot7
+  },
+  {
+    icon: <FiMonitor className="text-3xl mr-4" style={{ color: colors.teal }} />,
+    title: 'Stay Informed, Always',
+    description: 'Access your transaction history and current balance anytime, anywhere. Get instant notifications for new transactions and never miss an update.',
+    imageAlt: 'Real-Time Updates Screenshot',
+    imageSrc: screenshot8
   },
 ];
 
