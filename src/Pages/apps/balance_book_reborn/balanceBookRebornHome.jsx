@@ -87,7 +87,7 @@ const features = [
   {
     icon: <FiMonitor className="text-3xl mr-4" style={{ color: colors.teal }} />,
     title: 'Stay Informed, Always',
-    description: 'Access your transaction history and current balance anytime, anywhere. Get instant notifications for new transactions and never miss an update.',
+    description: 'Access your transaction history and current balance anytime, anywhere. Get instant updates for new transactions.',
     imageAlt: 'Real-Time Updates Screenshot',
     imageSrc: screenshot8
   },
