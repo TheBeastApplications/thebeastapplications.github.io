@@ -1,61 +1,10 @@
-// // src/pages/Home.js
-// import React, { useState } from 'react';
-// import { motion } from 'framer-motion';
-// import { Link } from 'react-router-dom';
-// import BalanceBookRebornIcon from '../apps/balance_book_reborn/public/icon.png'
-// import BalanceBookRebornHome from './../apps/balance_book_reborn/balanceBookRebornHome';
-// const apps = [
-//   { id: 'balance_book_reborn', name: 'Balance Book Reborn', },
-  
-// ];
 
-// const Home = () => {
-//   // Toggle dark mode on or off
-//   const [isDark, setIsDark] = useState(false);
-
-//   return (
-//     <div className={`container mx-auto px-4 py-10 ${isDark ? 'dark' : ''}`}>
-//        <header className="bg-gray-900 text-teal-500 py-4 mx-auto">
-//       <div className="container  flex justify-center items-center px-4 ">
-//         <Link to="/" className="text-3xl font-bold ">
-//           TheBeastApplications
-//         </Link>
-         
-//       </div>
-//     </header>
-
-//       {/* Responsive grid: 1 column on mobile, 2 columns on tablets, 3 columns on large screens */}
-//       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 py-20 justify-items-center">
-//         {apps.map((app) => (
-//           <motion.div
-//             key={app.id}
-//             className="app-card p-4 bg-gray-800 text-white rounded-lg shadow-lg"
-//             initial={{ opacity: 0 }}
-//             animate={{ opacity: 1 }}
-//             transition={{ duration: 0.8 }}
-//           >
-//             <Link to={`/app/${app.id}`} className="text-center">
-//               <img
-//                 src={BalanceBookRebornIcon}
-//                 alt={app.name}
-//                 className="w-full h-48 object-cover rounded-lg mb-4"
-//               />
-//               <h2 className="text-2xl font-semibold text-teal-500">{app.name}</h2>
-//               <p className="text-gray-300 mt-2">{app.description}</p>
-//             </Link>
-//           </motion.div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Home;
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiDownload, FiStar, FiUsers, FiBox } from 'react-icons/fi';
+import {  FiBox } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import BalanceBookRebornIcon from '../apps/balance_book_reborn/public/icon.png'
+import FCMNotifierIcon from '../apps/fcm_notifier_app/public/icon.png'
 
 
 const colors = {
@@ -82,6 +31,17 @@ const apps = [
     rating: 4.8,
     link: 'app/balance_book_reborn',
     playStoreLink: 'https://play.google.com/store/apps/details?id=com.thebeastapplications.balancebook'
+  },
+  {
+    id: 'fcm_notifier_app',
+    name: 'FCM Notifier App',
+    description: 'Send FCM notifications directly from your Device with ease.',
+    icon: FCMNotifierIcon,
+    category: 'Tools',
+    downloads: '10K+',
+    rating: 4.8,
+    link: 'app/fcm_notifier_app',
+    playStoreLink: 'https://play.google.com/store/apps/details?id=com.thebeastapplications.fcm_notifier_app'
   },
   
 ];
