@@ -1,9 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { MdRocketLaunch,MdEnhancedEncryption, MdToken , MdNotificationAdd, MdDarkMode} from 'react-icons/md';
 import { FiArrowRight, FiMail, FiAlertCircle,FiDownload } from 'react-icons/fi';
 import FCMNotifierIcon from './public/icon.png';
 import { Link } from 'react-router-dom';
-
+import screenshot1 from './public/01.png';
+import screenshot2 from './public/02.png';
+import screenshot3 from './public/03.png';
+import screenshot4 from './public/04.png';
+import screenshot5 from './public/05.png'; 
 const colors = {
   indigo: '#6366f1',
   indigoPale: '#818cf8',
@@ -21,6 +26,45 @@ const colors = {
   }
 };
 
+const features = [
+  {
+    icon: <MdRocketLaunch className="text-3xl mr-4" style={{ color: colors.indigo }} />,
+    title: 'Manage All Your Projects',
+    description: 'Take control of multiple pojects from a single dashboard. Add, manage, and send notifications to your users with our intuitive interface.',
+    imageAlt: 'Manage All Your Projects Screenshot',
+    imageSrc: screenshot1
+  },
+  {
+    icon: <MdEnhancedEncryption className="text-3xl mr-4" style={{ color: colors.indigo }} />,
+    title: 'Secure AES-256 Encryption',
+    description: 'All Your sensitive data is protected with AES-256 encryption. Rest easy knowing your credentials are secure.',
+    imageAlt: 'Secure AES-256 Encryption Screenshot',
+    imageSrc: screenshot2
+  },
+  {
+    icon: <MdToken className="text-3xl mr-4" style={{ color: colors.indigo }} />,
+    title: 'Support both notification topic and device tokens',
+    description: 'Send notifications to your users using either topic or device tokens. Choose the method that best fits your needs.',
+    imageAlt: 'Support both notification topic and device tokens Screenshot',
+    imageSrc: screenshot3
+  },
+  {
+    icon: <MdNotificationAdd className="text-3xl mr-4" style={{ color: colors.indigo }} />,
+    title: 'Access all your notifications from one screen',
+    description: 'View all your notifications in one place. You can also see preview of JSON that will be sent to FCM',
+    imageAlt: 'Access all your notifications from one screen Screenshot',
+    imageSrc: screenshot4
+  },
+  {
+    icon: <MdDarkMode className="text-3xl mr-4" style={{ color: colors.indigo }} />,
+    title: 'Easy switching between dark and light mode',
+    description: 'Easily switch between dark and light mode to match your preferences.',
+    imageAlt: 'Easy switching between dark and light mode Screenshot',
+    imageSrc: screenshot5
+  },
+  
+];
+
 const appDetails = {
   name: 'FCM Notifier App',
   description: 'Send FCM notifications directly from your device with ease.',
@@ -28,7 +72,7 @@ const appDetails = {
   playStoreLink: 'https://play.google.com/store/apps/details?id=com.thebeastapplications.fcm_notifier_app',
 };
 
-const features = [
+const lowPriorityFeatures = [
   {
     icon: <FiAlertCircle className="text-3xl mr-4" style={{ color: colors.indigo }} />,
     title: 'Send Notifications Effortlessly',
@@ -115,7 +159,7 @@ const FCMNotifierAppHome = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 md:px-8">
-          {features.map((feature, index) => (
+          {lowPriorityFeatures.map((feature, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
@@ -133,7 +177,42 @@ const FCMNotifierAppHome = () => {
           ))}
         </div>
 
-       
+       <div className="grid grid-cols-1 gap-4 md:px-8 overflow-hidden py-12">
+                 {features.map((feature, index) => (
+                   <motion.div
+                     key={index}
+                     initial={{ opacity: 0, x: index % 2 === 0 ? -50 :  50 }}
+                     whileInView={{ opacity: 1, x: 0 }}
+                     transition={{ duration: 0.6 }}
+                     className="shadow-lg rounded-lg p-6 flex flex-col sm:flex-row items-center"
+                     style={{ backgroundColor: colors.background.secondary }}
+                   >
+                     <div className="flex-1 mb-4 sm:mb-0 sm:mr-4">
+                       <div className="flex items-center">
+                         {feature.icon}
+                         <h2 className="text-2xl font-bold my-2 md:my-8" style={{ color: colors.indigo }}>
+                           {feature.title}
+                         </h2>
+                       </div>
+                       <p style={{ color: colors.text.secondary }}>{feature.description}</p>
+                       <button className="flex items-center font-medium my-2 md:my-8 border-2 border-indigo-700 rounded-lg px-4 py-2 " style={{ color: colors.indigo }}
+                   onClick={() => window.open(appDetails.playStoreLink, '_blank')}
+                       >
+                         Download Now <FiArrowRight className="ml-2" />
+                       </button>
+                     </div>
+                     <motion.div
+                       key={index}
+                       initial={{ opacity: 0, y: 20, rotate: 0, scale: 0.6 }}
+                       whileInView={{ opacity: 1, y: 0, rotate: 0, scale: 1 }}
+                       transition={{ duration: 1 }}
+                       className="rounded-lg overflow-hidden"
+                     >
+                       <img src={feature.imageSrc} alt={feature.imageAlt} className="h-[70vh] md:h-[70vh] w-fit object-cover" />
+                     </motion.div>
+                   </motion.div>
+                 ))}
+               </div>
                <motion.footer 
                  initial={{ opacity: 0, y: 0 }}
                  whileInView={{ opacity: 1, y: 0 }}
