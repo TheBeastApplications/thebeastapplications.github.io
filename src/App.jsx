@@ -6,6 +6,8 @@ import BalanceBookDeleteAccount from "./Pages/apps/balance_book_reborn/balanceBo
 import FCMNotifierAppHome from "./Pages/apps/fcm_notifier_app/fcmNotifierAppHome";
 import FCMNotifierAppPrivacyPolicy from "./Pages/apps/fcm_notifier_app/fcmNotifierAppPrivacyPolicy";
 import FCMNotifierAppDeleteAccount from "./Pages/apps/fcm_notifier_app/fcmNotifierAppDeleteAccount";
+import PlateAIHome from "./Pages/apps/plate_ai/plateAIHome";
+import PlateAIPrivacyPolicy from "./Pages/apps/plate_ai/plateAIPrivacyPolicy";
 
 function App() {
   return (
@@ -23,6 +25,11 @@ function App() {
       <Route index element={<FCMNotifierAppHome />} />
       <Route path="privacy-policy" element={<FCMNotifierAppPrivacyPolicy />} />
       <Route path="delete-account" element={<FCMNotifierAppDeleteAccount />} />
+    </Route>
+
+    <Route path="/app/plate_ai">
+      <Route index element={<PlateAIHome />} />
+      <Route path="privacy-policy" element={<PlateAIPrivacyPolicy />} />
     </Route>
 
   </Routes>

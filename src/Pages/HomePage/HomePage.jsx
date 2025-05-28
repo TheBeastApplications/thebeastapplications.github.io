@@ -5,7 +5,7 @@ import {  FiBox } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import BalanceBookRebornIcon from '../apps/balance_book_reborn/public/icon.png'
 import FCMNotifierIcon from '../apps/fcm_notifier_app/public/icon.png'
-
+import PlateAIIcon from '../apps/plate_ai/public/icon.png'
 
 const colors = {
   teal: '#14b8a6',
@@ -42,6 +42,17 @@ const apps = [
     rating: 4.8,
     link: 'app/fcm_notifier_app',
     playStoreLink: 'https://play.google.com/store/apps/details?id=com.thebeastapplications.fcm_notifier_app'
+  },
+  {
+    id: 'plate_ai',
+    name: 'Plate AI',
+    description: 'Analyze your meal in real-time and get a breakdown of calories, protein, carbs, and fats.',
+    icon: PlateAIIcon,
+    category: 'Tools',
+    downloads: '10K+',
+    rating: 4.8,
+    link: 'app/plate_ai',
+    playStoreLink: 'https://play.google.com/store/apps/details?id=com.thebeastapplications.plate_ai'
   },
   
 ];
