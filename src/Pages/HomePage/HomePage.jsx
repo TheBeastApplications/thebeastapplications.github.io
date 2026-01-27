@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import {  FiBox } from 'react-icons/fi';
@@ -6,6 +5,7 @@ import { Link } from 'react-router-dom';
 import BalanceBookRebornIcon from '../apps/balance_book_reborn/public/icon.png'
 import FCMNotifierIcon from '../apps/fcm_notifier_app/public/icon.png'
 import PlateAIIcon from '../apps/plate_ai/public/icon.png'
+import PlantScannerIcon from '../apps/plant_scanner/public/icon.png'
 
 const colors = {
   teal: '#14b8a6',
@@ -53,6 +53,17 @@ const apps = [
     rating: 4.8,
     link: 'app/plate_ai',
     playStoreLink: 'https://play.google.com/store/apps/details?id=com.thebeastapplications.plate_ai'
+  },
+  {
+    id: 'plant_scanner',
+    name: 'Plant Scanner - AI Identifier',
+    description: 'Identify plants with AI using photos and get helpful details in seconds.',
+    icon: PlantScannerIcon,
+    category: 'Tools',
+    downloads: '',
+    rating: 0,
+    link: 'app/plant_scanner',
+    playStoreLink: ''
   },
   
 ];
