@@ -43,18 +43,28 @@ const apps = [
     link: 'app/fcm_notifier_app',
     playStoreLink: 'https://play.google.com/store/apps/details?id=com.thebeastapplications.fcm_notifier_app'
   },
-  {
-    id: 'plate_ai',
-    name: 'Plate AI',
-    description: 'Analyze your meal in real-time and get a breakdown of calories, protein, carbs, and fats.',
-    icon: PlateAIIcon,
+  // {
+  //   id: 'plate_ai',
+  //   name: 'Plate AI',
+  //   description: 'Analyze your meal in real-time and get a breakdown of calories, protein, carbs, and fats.',
+  //   icon: PlateAIIcon,
+  //   category: 'Tools',
+  //   downloads: '10K+',
+  //   rating: 4.8,
+  //   link: 'app/plate_ai',
+  //   playStoreLink: 'https://play.google.com/store/apps/details?id=com.thebeastapplications.plate_ai'
+  // },
+    {
+    id: 'plant_scanner',
+    name: 'Plant Scanner - AI Identifier',
+    description: 'Identify plants with AI using photos and get helpful details in seconds.',
+    icon: PlantScannerIcon,
     category: 'Tools',
-    downloads: '10K+',
-    rating: 4.8,
-    link: 'app/plate_ai',
-    playStoreLink: 'https://play.google.com/store/apps/details?id=com.thebeastapplications.plate_ai'
+    downloads: '',
+    rating: 0,
+    link: 'app/plant_scanner',
+    playStoreLink: ''
   },
-  
 ];
 
 const AppCard = ({ app, index }) => {
