@@ -8,6 +8,8 @@ import FCMNotifierAppPrivacyPolicy from "./Pages/apps/fcm_notifier_app/fcmNotifi
 import FCMNotifierAppDeleteAccount from "./Pages/apps/fcm_notifier_app/fcmNotifierAppDeleteAccount";
 import PlateAIHome from "./Pages/apps/plate_ai/plateAIHome";
 import PlateAIPrivacyPolicy from "./Pages/apps/plate_ai/plateAIPrivacyPolicy";
+import PlantScannerHome from "./Pages/apps/plant_scanner/plantScannerHome";
+import PlantScannerPrivacyPolicy from "./Pages/apps/plant_scanner/plantScannerPrivacyPolicy";
 
 function App() {
   return (
@@ -30,6 +32,11 @@ function App() {
     <Route path="/app/plate_ai">
       <Route index element={<PlateAIHome />} />
       <Route path="privacy-policy" element={<PlateAIPrivacyPolicy />} />
+    </Route>
+
+    <Route path="/app/plant_scanner">
+      <Route index element={<PlantScannerHome />} />
+      <Route path="privacy-policy" element={<PlantScannerPrivacyPolicy />} />
     </Route>
 
   </Routes>
