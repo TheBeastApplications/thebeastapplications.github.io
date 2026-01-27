@@ -54,17 +54,6 @@ const apps = [
     link: 'app/plate_ai',
     playStoreLink: 'https://play.google.com/store/apps/details?id=com.thebeastapplications.plate_ai'
   },
-  {
-    id: 'plant_scanner',
-    name: 'Plant Scanner - AI Identifier',
-    description: 'Identify plants with AI using photos and get helpful details in seconds.',
-    icon: PlantScannerIcon,
-    category: 'Tools',
-    downloads: '',
-    rating: 0,
-    link: 'app/plant_scanner',
-    playStoreLink: ''
-  },
   
 ];
 
