@@ -8,8 +8,9 @@ import FCMNotifierAppPrivacyPolicy from "./Pages/apps/fcm_notifier_app/fcmNotifi
 import FCMNotifierAppDeleteAccount from "./Pages/apps/fcm_notifier_app/fcmNotifierAppDeleteAccount";
 import PlateAIHome from "./Pages/apps/plate_ai/plateAIHome";
 import PlateAIPrivacyPolicy from "./Pages/apps/plate_ai/plateAIPrivacyPolicy";
-import PlantScannerHome from "./Pages/apps/plant_scanner/plantScannerHome";
-import PlantScannerPrivacyPolicy from "./Pages/apps/plant_scanner/plantScannerPrivacyPolicy";
+import FoliagoHome from "./Pages/apps/foliago/foliagoHome";
+import FoliagoPrivacyPolicy from "./Pages/apps/foliago/foliagoPrivacyPolicy";
+import FoliagoTermsAndConditions from "./Pages/apps/foliago/foliagoTermsAndConditions";
 
 function App() {
   return (
@@ -34,9 +35,10 @@ function App() {
       <Route path="privacy-policy" element={<PlateAIPrivacyPolicy />} />
     </Route>
 
-    <Route path="/app/plant_scanner">
-      <Route index element={<PlantScannerHome />} />
-      <Route path="privacy-policy" element={<PlantScannerPrivacyPolicy />} />
+    <Route path="/app/foliago">
+      <Route index element={<FoliagoHome />} />
+      <Route path="privacy-policy" element={<FoliagoPrivacyPolicy />} />
+      <Route path="terms-and-conditions" element={<FoliagoTermsAndConditions />} />
     </Route>
 
   </Routes>
