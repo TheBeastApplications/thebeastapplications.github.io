@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import BalanceBookRebornIcon from '../apps/balance_book_reborn/public/icon.png'
 import FCMNotifierIcon from '../apps/fcm_notifier_app/public/icon.png'
 import PlateAIIcon from '../apps/plate_ai/public/icon.png'
-import PlantScannerIcon from '../apps/plant_scanner/public/icon.png'
+import FoliagoIcon from '../apps/foliago/public/icon.png'
 
 const colors = {
   teal: '#14b8a6',
@@ -55,15 +55,15 @@ const apps = [
   //   playStoreLink: 'https://play.google.com/store/apps/details?id=com.thebeastapplications.plate_ai'
   // },
     {
-    id: 'plant_scanner',
-    name: 'Plant Scanner - AI Identifier',
-    description: 'Identify plants with AI using photos and get helpful details in seconds.',
-    icon: PlantScannerIcon,
+    id: 'foliago',
+    name: 'Foliago - AI Plant Identifier',
+    description: 'Identify any plant instantly, get personalized care guides, smart reminders, and AI expert advice.',
+    icon: FoliagoIcon,
     category: 'Tools',
     downloads: '',
     rating: 0,
-    link: 'app/plant_scanner',
-    playStoreLink: ''
+    link: 'app/foliago',
+    playStoreLink: 'https://play.google.com/store/apps/details?id=com.thebeastapplications.plantscanner'
   },
 ];
 
