@@ -11,6 +11,15 @@ import PlateAIPrivacyPolicy from "./Pages/apps/plate_ai/plateAIPrivacyPolicy";
 import FoliagoHome from "./Pages/apps/foliago/foliagoHome";
 import FoliagoPrivacyPolicy from "./Pages/apps/foliago/foliagoPrivacyPolicy";
 import FoliagoTermsAndConditions from "./Pages/apps/foliago/foliagoTermsAndConditions";
+import PlumagoHome from "./Pages/apps/plumago/plumagoHome";
+import PlumagoPrivacyPolicy from "./Pages/apps/plumago/plumagoPrivacyPolicy";
+import PlumagoTermsAndConditions from "./Pages/apps/plumago/plumagoTermsAndConditions";
+import BuggleHome from "./Pages/apps/buggle/buggleHome";
+import BugglePrivacyPolicy from "./Pages/apps/buggle/bugglePrivacyPolicy";
+import BuggleTermsAndConditions from "./Pages/apps/buggle/buggleTermsAndConditions";
+import FinlyHome from "./Pages/apps/finly/finlyHome";
+import FinlyPrivacyPolicy from "./Pages/apps/finly/finlyPrivacyPolicy";
+import FinlyTermsAndConditions from "./Pages/apps/finly/finlyTermsAndConditions";
 
 function App() {
   return (
@@ -39,6 +48,24 @@ function App() {
       <Route index element={<FoliagoHome />} />
       <Route path="privacy-policy" element={<FoliagoPrivacyPolicy />} />
       <Route path="terms-and-conditions" element={<FoliagoTermsAndConditions />} />
+    </Route>
+
+    <Route path="/app/plumago">
+      <Route index element={<PlumagoHome />} />
+      <Route path="privacy-policy" element={<PlumagoPrivacyPolicy />} />
+      <Route path="terms-and-conditions" element={<PlumagoTermsAndConditions />} />
+    </Route>
+
+    <Route path="/app/buggle">
+      <Route index element={<BuggleHome />} />
+      <Route path="privacy-policy" element={<BugglePrivacyPolicy />} />
+      <Route path="terms-and-conditions" element={<BuggleTermsAndConditions />} />
+    </Route>
+
+    <Route path="/app/finly">
+      <Route index element={<FinlyHome />} />
+      <Route path="privacy-policy" element={<FinlyPrivacyPolicy />} />
+      <Route path="terms-and-conditions" element={<FinlyTermsAndConditions />} />
     </Route>
 
   </Routes>
